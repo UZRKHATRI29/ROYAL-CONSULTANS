@@ -988,3 +988,100 @@ hr{
     flex-basis: 100%;
   }
 }
+.sub-header4{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/project.jpg);
+  background-position: center;
+  background-size: cover ;
+  text-align: center;
+  color: #fff ;
+}
+.sub-header4 h1{
+  padding-top: 100px;
+}
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-item {
+  width: 30%;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.project-item:hover {
+  transform: translateY(-10px);
+}
+
+.project-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+}
+.project-item:hover img {
+  transform: scale(1.1);
+}
+
+.project-description {
+  text-align: center;
+}
+
+.project-description img {
+  max-width: 80%;
+  height: auto;
+}
+
+.project-image:hover {
+  content: url(images/royal3.jpg);
+
+}
+
+.project-description img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-description img:hover {
+  transform: scale(1.1);
+}
+
+
+.project-description p{
+  font-size: 17px;
+  padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .sub-header4{
+    height: 50vh;    
+  }
+  .sub-header4 h1{
+    
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 18px;
+  }
+  .project-gallery {
+  display: block;
+  }
+  
+  .project-item {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  }
+  
+  .project-item img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+  }
+  }
+
